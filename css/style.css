@@ -8,6 +8,18 @@ body, .reveal a, .reveal a:visited,
   color: black;
 }
 
+#nypl {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  padding: 20px;
+}
+
+#nypl img {
+  width: 50px;
+}
+
 #caption-container {
   padding: 20px;
   position: absolute;
@@ -42,6 +54,11 @@ body, .reveal a, .reveal a:visited,
   line-height: 1.6em;
 }
 
- .reveal table td {
+.reveal table td {
   border-bottom: none;
 }
+
+.reveal .text-shadow {
+  text-shadow: 0px 0px 8px white;
+}
+

@@ -13,15 +13,27 @@
 	</head>
 	<body>
 		<!-- Resolution: 1280 x 800 -->
+
 		<div class="reveal">
 			<div class="slides">
-				<section data-background="images/632461fe-bb76-97e3-e040-e00a18063f5b-faded.jpg">
-					<h1>NYPL’s NYC Space/Time Directory</h1>
-					<h2>From multiple historic data sources to a searchable atlas of New York City</h2>
+
+				<section class="block-text" data-background="images/510d47da-efa0-a3d9-e040-e00a18064a99.jpg">
+					<div>
+						<span class="block"><strong>The NYC Space/Time Directory</strong></span>
+					</div>
+					<div>
+						<span class="block">Bert Spaan, The New York Public Library</span>
+					</div>
 					<span class="caption">
 						NACIS 2017 — October 12 — Reflections on the Atlas
 					</span>
-					<!-- Achtergrond! fietstocht! -->
+				</section>
+
+				<section data-background-video="route/route.mp4">
+					<!-- From NYC to Montreal -->
+					<span class="caption">
+						From multiple historic data sources to a searchable atlas of NYC
+					</span>
 				</section>
 
 				<section>
@@ -36,8 +48,6 @@
 						</li>
 					</ol>
 				</section>
-
-				<!-- Bert Spaan -->
 
 				<section data-background="images/diu.jpg">
 					<span class="caption">
@@ -69,8 +79,7 @@
 					</span>
 				</section>
 
-				<section data-background="images/110d5dd0-79db-0134-6d79-00505686a51c.jpg">
-					<!-- TOEVOEGEN PIJL -->
+				<section data-background-video="images/110d5dd0-79db-0134-6d79-00505686a51c.mp4">
 					<span class="caption">
 						<a href="https://digitalcollections.nypl.org/items/110d5dd0-79db-0134-6d79-00505686a51c">
 							Trow’s general directory of Manhattan and Bronx (1899/1900)
@@ -78,36 +87,10 @@
 					</span>
 				</section>
 
-				<section data-background="images/943be7e8-a635-394f-e040-e00a18061a98.jpg">
-					<!-- TOEVOEGEN PIJL -->
+				<section data-background-video="images/943be7e8-a635-394f-e040-e00a18061a98.mp4">
 					<span class="caption">
 						<a href="https://digitalcollections.nypl.org/items/943be7e8-a635-394f-e040-e00a18061a98">
 							Sanborn Insurance Atlas of New York City, Plate 26 (1894)
-						</a>
-					</span>
-				</section>
-
-				<section data-background="images/510d47dc-dead-a3d9-e040-e00a18064a99.jpg">
-					<span class="caption">
-						<a href="https://digitalcollections.nypl.org/items/510d47dc-dead-a3d9-e040-e00a18064a99">George Ehret Hell Gate Brewery - 2nd Avenue - 90th Street (1928)
-						</a>
-					</span>
-				</section>
-
-				<section data-background="images/brewers-directory.jpg">
-					<!-- TOEVOEGEN PIJL -->
-					<span class="caption">
-						<a href="https://digitalcollections.nypl.org/items/73e035f0-d7c2-0131-3274-58d385a7bbd0">
-							Tovey’s official brewers’ and maltsters' directory (1914)
-						</a>
-					</span>
-				</section>
-
-				<section data-background="images/510d47e2-0b07-a3d9-e040-e00a18064a99.jpg">
-					<!-- TOEVOEGEN PIJL -->
-					<span class="caption">
-						<a href="https://digitalcollections.nypl.org/items/510d47e2-0b07-a3d9-e040-e00a18064a99">
-							Atlas of the Borough of Manhattan, Plate 119 (1916)
 						</a>
 					</span>
 				</section>
@@ -116,6 +99,14 @@
 					<img class="stretch" src="images/mapwarper.png" />
 					<span class="caption">
 						<a href="http://maps.nypl.org/warper">Map Warper</a>, our website for crowdsourced map georectification
+					</span>
+				</section>
+
+				<section data-background="images/510d47e2-548f-a3d9-e040-e00a18064a99.jpg">
+					<span class="caption">
+						<a href="https://digitalcollections.nypl.org/items/510d47e2-548f-a3d9-e040-e00a18064a99">
+							Piano and ice factories in the South Bronx
+						</a>
 					</span>
 				</section>
 
@@ -205,7 +196,7 @@
 					<img src="images/crf.png" />
 					<span class="caption">
 						<a href="https://github.com/nypl-spacetime/city-directory-entry-parser">
-							Using conditional random fields to parse lines from city directories
+							Conditional random fields (CRF) turn lines into data
 						</a>
 					</span>
 				</section>
@@ -219,10 +210,12 @@
 						<tr><td>B'way</td><td>⟶</td><td>Broadway</td></li>
 						<tr><td>Merchants Ex</td><td>⟶</td><td>Merchants Exchange</td></tr>
 						<tr><td>Grace Ct.</td><td>⟶</td><td>Grace Court</td></tr>
+						<tr><td>Thirty-First</td><td>⟶</td><td>31st Street</td></tr>
+						<tr><td>B'ry</td><td>⟶</td><td>Bowery</td></tr>
 					</table>
 					<span class="caption">
 						<a href="https://github.com/nypl-spacetime/nyc-street-normalizer">
-							Normalizing street names from city directories
+							Street names from city directories need to be normalized
 						</a>
 					</span>
 				</section>
@@ -230,7 +223,7 @@
 				<section data-background-video="images/lower-east-side-1854.mp4" data-background-video-loop="true">
 					<span class="caption">
 						<a href="http://spacetime.nypl.org/lower-east-side-1854/">
-							Geocoding city directories with historical address data
+							City directories, geocoded with historical address data
 						</a>
 					</span>
 				</section>
@@ -242,13 +235,12 @@
 					</span>
 				</section>
 
-<!-- visualizing the resulting graph with Atlas -->
-				<!-- ATLAS! -->
-				<!-- MAAK GIF -->
-				<!-- beroepen! -->
-				<!-- emigrant! -->
-				<!-- kaarten, alles! -->
-				<!-- aanpassen Atlas: weg met rare tijdlijn, niet te brede plaatjes, beroepen laten zien, max relaties -->
+				<section>
+					<video class="stretch" data-autoplay src="images/atlas.mp4"></video>
+					<span class="caption">
+						A new UI to search &amp; visualize data from the Space/Time graph
+					</span>
+				</section>
 
 				<section class="block-text" data-background="images/510d47e3-e00e-a3d9-e040-e00a18064a99.jpg">
 					<h2><span class="block">Thanks!</span></h2>
@@ -271,6 +263,9 @@
 		<div id="caption-container">
 			<div id="caption">
 			</div>
+		</div>
+		<div id="nypl">
+			<a href="http://spacetime.nypl.org/"><img src="images/nypl-white.svg" /></a>
 		</div>
 		<script src="js/reveal.js"></script>
 		<script src="js/script.js"></script>
